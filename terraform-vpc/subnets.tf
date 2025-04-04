@@ -7,7 +7,7 @@ resource "aws_subnet" "public-webtier-subnet-1" {
   map_public_ip_on_launch = true
 
   tags = {
-    Name = "Public Subnet 1 - Web Tier"
+    Name = "Public Subnet 1 - Web Tier-v"
   }
 }
 
@@ -20,7 +20,7 @@ resource "aws_subnet" "public-webtier-subnet-2" {
   map_public_ip_on_launch = true
 
   tags = {
-    Name = "Public Subnet 2 - Web Tier"
+    Name = "Public Subnet 2 - Web Tier-v"
   }
 }
 
@@ -33,7 +33,7 @@ resource "aws_subnet" "private-apptier-subnet-1" {
   map_public_ip_on_launch = false
 
   tags = {
-    Name = "Private Subnet 1 - App Tier"
+    Name = "Private Subnet 1 - App Tier-v"
   }
 }
 
@@ -47,7 +47,7 @@ resource "aws_subnet" "private-apptier-subnet-2" {
   map_public_ip_on_launch = false
 
   tags = {
-    Name = "Private Subnet 2 - App Tier"
+    Name = "Private Subnet 2 - App Tier-v"
   }
 }
 
@@ -61,7 +61,7 @@ resource "aws_subnet" "private-database-subnet-1" {
   map_public_ip_on_launch = false
 
   tags = {
-    Name = "Private Subnet 1 - Db Tier"
+    Name = "Private Subnet 1 - Db Tier-v"
   }
 }
 
@@ -76,6 +76,6 @@ resource "aws_subnet" "private-database-subnet-2" {
   map_public_ip_on_launch = false
 
   tags = {
-    Name = "Private Subnet 2 - Db Tier"
+    Name = "Private Subnet 2 - Db Tier-v"
   }
 }

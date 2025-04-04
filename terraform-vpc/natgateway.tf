@@ -4,7 +4,7 @@ resource "aws_eip" "eip_nat" {
   
 
   tags = {
-    Name = "eip1"
+    Name = "eip1-v"
   }
 }
 
@@ -13,6 +13,6 @@ resource "aws_nat_gateway" "nat_gateway" {
   subnet_id     = aws_subnet.public-webtier-subnet-1.id
 
   tags = {
-    "Name" = "Nat Gateway"
+    "Name" = "Nat Gateway-v"
   }
 }

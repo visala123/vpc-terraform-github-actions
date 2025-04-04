@@ -23,7 +23,7 @@ resource "aws_instance" "PublicWebTemplate" {
   user_data              = file("install-apache.sh")
 
   tags = {
-    Name = "webtier-instance"
+    Name = "webtier-instance-v"
   }
 }
 
@@ -39,6 +39,6 @@ resource "aws_instance" "private-app-template" {
   key_name               = "keypair"
 
   tags = {
-    Name = "apptier-instance"
+    Name = "apptier-instance-v"
   }
 }

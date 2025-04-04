@@ -36,6 +36,6 @@ resource "aws_security_group" "webserver-security-group" {
   }
 
   tags = {
-    Name = "Web server Security group"
+    Name = "Web server Security group-v"
   }
 }

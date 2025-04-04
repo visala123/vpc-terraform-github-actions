@@ -22,6 +22,6 @@ resource "aws_security_group" "database-security-group" {
   }
 
   tags = {
-    Name = "Database Security group"
+    Name = "Database Security group-v"
   }
 }

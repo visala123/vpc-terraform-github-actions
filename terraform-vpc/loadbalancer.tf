@@ -9,7 +9,7 @@ resource "aws_lb" "application-load-balancer" {
   enable_deletion_protection = false
 
   tags = {
-    Name = "App load balancer"
+    Name = "App load balancer-v"
   }
 }
 

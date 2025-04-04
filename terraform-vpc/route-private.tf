@@ -9,7 +9,7 @@ resource "aws_route_table" "private-route-table" {
   }
 
   tags = {
-    Name = "vpc-test-Private Route Table"
+    Name = "vpc-test-Private Route Table-v"
   }
 }
 
@@ -18,10 +18,10 @@ resource "aws_route_table_association" "nat_route_1" {
   route_table_id = aws_route_table.private-route-table.id
 }
 
-/*resource "aws_route_table_association" "nat_route_2" {
+resource "aws_route_table_association" "nat_route_2" {
   subnet_id      = aws_subnet.private-apptier-subnet-2.id
   route_table_id = aws_route_table.private-route-table.id
-}*/
+}
 
 
 
@@ -31,7 +31,7 @@ resource "aws_route_table_association" "nat_route_db_1" {
 }
 
 
-/*resource "aws_route_table_association" "nat_route_db_2" {
+resource "aws_route_table_association" "nat_route_db_2" {
   subnet_id      = aws_subnet.private-database-subnet-2.id
   route_table_id = aws_route_table.private-route-table.id
-}*/
+}

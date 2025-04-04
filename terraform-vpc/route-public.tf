@@ -9,7 +9,7 @@ resource "aws_route_table" "public-route-table" {
   }
 
   tags = {
-    Name = "vpc-test-Public Route Table"
+    Name = "vpc-test-Public Route Table-v"
   }
 }
 
