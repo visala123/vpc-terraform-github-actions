@@ -41,7 +41,7 @@ variable "private-apptier-subnet-2-cidr" {
 ## DB CIDR Block 1 ##
 
 variable "private-database-subnet-1-cidr" {
-  default     = "10.0.4.0/24"
+  default     = "10.0.5.0/24"
   description = "private_db_subnet1"
   type        = string
 }
@@ -49,7 +49,7 @@ variable "private-database-subnet-1-cidr" {
 ## DB CIDR Block 2 ##
 
 variable "private-database-subnet-2-cidr" {
-  default     = "10.0.5.0/24"
+  default     = "10.0.6.0/24"
   description = "private_db_subnet2"
   type        = string
 }
